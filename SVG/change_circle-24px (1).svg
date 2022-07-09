@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="39" viewBox="0 0 40 39">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0082ff"/>
+      <stop offset="1" stop-color="#a3d3ff"/>
+    </linearGradient>
+  </defs>
+  <g id="change_circle-24px" transform="translate(-0.021 0.313)">
+    <rect id="Rectangle_454" data-name="Rectangle 454" width="40" height="39" transform="translate(0.021 -0.313)" fill="none"/>
+    <path id="Path_182" data-name="Path 182" d="M19.853,2A17.742,17.742,0,0,0,2,19.616,17.742,17.742,0,0,0,19.853,37.233,17.742,17.742,0,0,0,37.706,19.616,17.742,17.742,0,0,0,19.853,2Zm.107,29.948V28.407h-.107a9.028,9.028,0,0,1-6.32-2.572A8.732,8.732,0,0,1,12.39,14.754l1.964,1.938a6.1,6.1,0,0,0,1.053,7.276,6.22,6.22,0,0,0,4.535,1.779v-3.77l5.052,4.985ZM27.3,24.479l-1.964-1.938a6.1,6.1,0,0,0-1.053-7.276,6.26,6.26,0,0,0-4.428-1.814h-.107v3.788L14.693,12.27l5.052-4.985v3.559A8.856,8.856,0,0,1,26.173,13.4,8.75,8.75,0,0,1,27.3,24.479Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

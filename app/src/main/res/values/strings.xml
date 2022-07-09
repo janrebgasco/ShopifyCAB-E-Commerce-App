@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Shopify CAB</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="txtEmail">"Email"</string>
+    <string name="txtPass">"Password"</string>
+    <string name="txtbottomWelcome">"Log in your existing account"</string>
+    <string name="strEmail">Enter your username</string>
+    <string name="strPass">Enter your password</string>
+    <string name="txtForgotPass">Forgot password?</string>
+    <string name="txtDont">Don"'"t have an account?</string>
+    <string name="txtClickSignup">Sign Up </string>
+    <string name="txtRemember">Remember password</string>
+    <string name="txtBtnLogin">Log in</string>
+    <string name="txtClickHere">here</string>
+    <string name="txtSign">Sign Up </string>
+    <string name="descLogo">Logo</string>
+    <string name="txtPls">Enter your information below to sign up.</string>
+    <string name="confirmpas">Confirm Password</string>
+    <string name="txtEnterName">Please enter your username</string>
+    <string name="txtLog">Login</string>
+    <string name="txtAldready">Already have an account?</string>
+    <string name="txtTerms">Terms and Conditions</string>
+    <string name="txtName">Username</string>
+    <string name="txtConfirm">Confirm Password</string>
+    <string name="txtProceed">By proceeding you agree to the</string>
+    <string name="txtContinue">Continue</string>
+    <string name="txtAbove">Please enter email to get password reset link.</string>
+    <string name="txtRec">Account Recovery</string>
+    <string name="txtGet">Get Code</string>
+    <string name="txtOtp">Please enter your OTP code sent to you by sms.</string>
+    <string name="txtMobile">Enter your mobile number</string>
+    <string name="txtResend">Resend code</string>
+    <string name="txtNum">Mobile number</string>
+    <string name="txtDidnt">Didn\'t get a code?</string>
+    <string name="txtVerif">Verification</string>
+    <string name="btnback">btnBack</string>
+    <string name="uname">Username</string>
+    <string-array name="genderArray">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="number">
+        <item>+63</item>
+    </string-array>
+    <string-array name="categoryArray">
+        <item>Select Category</item>
+        <item>Gadgets</item>
+        <item>Grocery</item>
+        <item>Electronic Accessories</item>
+        <item>Health and Beauty</item>
+        <item>Babies and Toys</item>
+        <item>TV and Home Appliances</item>
+        <item>Home and Living</item>
+        <item>Women\'s Fashion</item>
+        <item>Men\'s Fashion</item>
+        <item>Fashion Accessories</item>
+        <item>Automotive and Motorcycle</item>
+        <item>Sports</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="sizes">
+        <item>Select Sizes</item>
+        <item>Clothes Sizes</item>
+        <item>Shoe Sizes(USA)</item>
+        <item>Shoe Sizes(UK)</item>
+        <item>Shoe Sizes(EU)</item>
+    </string-array>
+    <string-array name="SortPrice">
+        <item>Sort Price</item>
+        <item>Lowest Price to Highest</item>
+        <item>Highest Price to Lowest</item>
+    </string-array>
+    <string-array name="condition">
+        <item>Select Condition</item>
+        <item>New</item>
+        <item>Used</item>
+        <item>Slightly Used</item>
+    </string-array>
+    <string-array name="payment_options">
+        <item>Cash on Delivery</item>
+        <item>Shopify CAB Wallet</item>
+        <item>Scan on Deliver</item>
+    </string-array>
+    <string-array name="shipping">
+        <item>Standard Local ₱40</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_orders">Orders</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="search">Search</string>
+    <string name="touch_to_close">Touch to Close</string>
+    <string name="footer">Selling on ShopifyCAB is easy. But the real question is, how do you make sure your products really sell? Don’t worry – here are some tips for all you sellers!</string>
+    <string name="footer2">Ready to discover a wide range of products available on ShopifyCAB mobile marketplace? Whether you are interested in fashion, gadgets, accessories or toys, we have it all. Here are some tips for your ShopifyCABholics:</string>
+    <string name="facebook_app_id">475834720501727</string>
+    <string name="fb_login_protocol_scheme">fb475834720501727</string>
+    <string name="slrDesc">Please fill in the info below to get verified as seller</string>
+</resources>

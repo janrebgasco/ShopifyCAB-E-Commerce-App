@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#77a5f8"/>
+      <stop offset="1" stop-color="#d5a3ff"/>
+    </linearGradient>
+    <filter id="Path_160" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#7a71e8" flood-opacity="0.341"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.518"/>
+    </linearGradient>
+    <filter id="_004-furniture-and-household" x="28.5" y="30.5" width="53.547" height="53.307" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#0062ff" flood-opacity="0.345"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_165" data-name="Group 165" transform="translate(-282.5 -15.5)">
+    <g id="Electronics" transform="translate(280 -349)">
+      <g id="icon" transform="translate(-173 239)">
+        <g transform="matrix(1, 0, 0, 1, 175.5, 125.5)" filter="url(#Path_160)">
+          <path id="Path_160-2" data-name="Path 160" d="M32.5,0A32.5,32.5,0,1,1,0,32.5,32.5,32.5,0,0,1,32.5,0Z" transform="translate(22.5 14.5)" fill="url(#linear-gradient)"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 175.5, 125.5)" filter="url(#_004-furniture-and-household)">
+          <path id="_004-furniture-and-household-2" data-name="004-furniture-and-household" d="M18.815,20.292v-2.8H31.131V0H4.415V17.493H16.732v2.8H0V32.131H5.068v3.177H7.151V32.131H28.4v3.177h2.083V32.131h5.068V20.292ZM12.826,26.74H9.94V24.19h2.886Zm12.781,0H22.721V24.19h2.886Zm0,0" transform="translate(37.5 31.5)" fill="url(#linear-gradient-2)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

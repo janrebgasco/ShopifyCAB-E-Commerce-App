@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#505862"/>
+      <stop offset="1" stop-color="#9d9e9f"/>
+    </linearGradient>
+    <filter id="Ellipse_6" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#646464" flood-opacity="0.341"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7f0f0"/>
+      <stop offset="1" stop-color="#7c8086"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_169" data-name="Group 169" transform="translate(-7.5 -284.5)">
+    <g id="Stationary" transform="translate(5 -80)">
+      <g id="icon" transform="translate(-173 239)">
+        <g transform="matrix(1, 0, 0, 1, 175.5, 125.5)" filter="url(#Ellipse_6)">
+          <circle id="Ellipse_6-2" data-name="Ellipse 6" cx="32.5" cy="32.5" r="32.5" transform="translate(22.5 14.5)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+    <g id="tennis-ball-svgrepo-com_1_" data-name="tennis-ball-svgrepo-com (1)" transform="translate(43.995 313.724)">
+      <g id="Group_162" data-name="Group 162" transform="translate(0.005)">
+        <path id="Path_177" data-name="Path 177" d="M18.966,0A18.823,18.823,0,0,0,0,18.638,18.823,18.823,0,0,0,18.966,37.276,18.823,18.823,0,0,0,37.927,18.638,18.821,18.821,0,0,0,18.966,0ZM9.7,32.323A16.888,16.888,0,0,1,6.829,29.94a20.367,20.367,0,0,0,3.834-11.3A13.994,13.994,0,0,0,6.109,8.129,16.688,16.688,0,0,1,8.787,5.6a17.468,17.468,0,0,1,5.594,13.037A24.058,24.058,0,0,1,9.7,32.323Zm21.837-2.85a16.739,16.739,0,0,1-2.8,2.5A23.877,23.877,0,0,1,24.3,18.637,17.446,17.446,0,0,1,29.56,5.919a16.664,16.664,0,0,1,2.592,2.613,13.954,13.954,0,0,0-4.138,10.1A20.092,20.092,0,0,0,31.537,29.473Z" transform="translate(-0.005)" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+  </g>
+</svg>

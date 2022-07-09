@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellProduct">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/sizeDdown"
+        style="@style/spinner_style"
+        android:layout_width="200dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:entries="@array/sizes"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintStart_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        style="@style/myToggleButton"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textOff="M"
+        android:textOn="M"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButton9"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton9"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton9" />
+
+    <TextView
+        android:id="@+id/sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Add Product"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/sellBack"
+        android:layout_width="89dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="?selectableItemBackground"
+        android:onClick="backSell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_icon" />
+
+    <ImageButton
+        android:id="@+id/sellUploadImage"
+        android:layout_width="72dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:background="?selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellBack"
+        app:srcCompat="@drawable/addimg_svg" />
+
+    <EditText
+        android:id="@+id/sellProdName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_txtbox"
+        android:ems="10"
+        android:paddingStart="10dp"
+        android:hint="Product Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sellUploadImage"
+        app:layout_constraintTop_toBottomOf="@+id/uploadedImage" />
+
+    <Spinner
+        android:id="@+id/sellCateg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        style="@style/spinner_style"
+        android:visibility="gone"
+        android:entries="@array/categoryArray"
+        app:layout_constraintStart_toStartOf="@+id/sellDescription"
+        app:layout_constraintTop_toBottomOf="@+id/sellDescription" />
+
+    <EditText
+        android:id="@+id/sellDescription"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:paddingStart="10dp"
+        android:background="@drawable/rounded_txtbox"
+        android:hint="Product Description"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/sellProdName"
+        app:layout_constraintTop_toBottomOf="@+id/sellProdName" />
+
+    <EditText
+        android:id="@+id/sellPrice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:paddingStart="10dp"
+        android:hint="Price"
+        android:background="@drawable/rounded_txtbox"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/sellCateg"
+        app:layout_constraintTop_toBottomOf="@+id/sellCateg" />
+
+    <EditText
+        android:id="@+id/sellStocks"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:paddingStart="10dp"
+        android:hint="Stocks"
+        android:background="@drawable/rounded_txtbox"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/sellPrice"
+        app:layout_constraintTop_toBottomOf="@+id/sellPrice" />
+
+    <Spinner
+        android:id="@+id/sellShipFee"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/shipping"
+        style="@style/spinner_style"
+        app:layout_constraintStart_toStartOf="@+id/sellStocks"
+        app:layout_constraintTop_toBottomOf="@+id/sellStocks" />
+
+    <Spinner
+        android:id="@+id/sellCondition"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/condition"
+        style="@style/spinner_style"
+        app:layout_constraintStart_toStartOf="@+id/sellShipFee"
+        app:layout_constraintTop_toBottomOf="@+id/sellShipFee" />
+
+    <EditText
+        android:id="@+id/sellBrand"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:paddingStart="10dp"
+        android:hint="Brand"
+        android:background="@drawable/rounded_txtbox"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellCondition" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sellcardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellBrand">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/sellchangeAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="26dp"
+                android:background="?selectableItemBackground"
+                android:onClick="sellerChooseAddress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+            <TextView
+                android:id="@+id/sellAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="7dp"
+                android:textColor="#373737"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sellchangeAddress"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/selltextView33" />
+
+            <ImageView
+                android:id="@+id/sellimgloc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/loc_svg" />
+
+            <TextView
+                android:id="@+id/selltextView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seller Address"
+                android:textColor="#3A3A3A"
+                app:layout_constraintBottom_toBottomOf="@+id/sellimgloc"
+                app:layout_constraintStart_toEndOf="@+id/sellimgloc"
+                app:layout_constraintTop_toTopOf="@+id/sellimgloc" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/sellPublishBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/theme_color"
+        android:text="Publish"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toEndOf="@+id/separator"
+        app:layout_constraintTop_toBottomOf="@+id/imgSelerVerification" />
+
+    <Button
+        android:id="@+id/sellSaveBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#FF9800"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSelerVerification" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="120dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sellUploadImage"
+        app:layout_constraintStart_toEndOf="@+id/sellUploadImage"
+        app:layout_constraintTop_toTopOf="@+id/sellUploadImage"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/uploadedbackg"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/dotsquare_svg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/uploadedImage"
+        android:layout_width="120dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sellUploadImage"
+        app:layout_constraintStart_toEndOf="@+id/sellUploadImage"
+        app:layout_constraintTop_toTopOf="@+id/sellUploadImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSelerVerification" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="148dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoxAddSize">
+
+        <ImageView
+            android:id="@+id/verifback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dotsquare_svg" />
+
+        <TextView
+            android:id="@+id/textView412"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imgSelerVerification"
+        android:layout_width="148dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoxAddSize" />
+
+    <ImageButton
+        android:id="@+id/btnSellerVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSelerVerification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/imgSelerVerification"
+        app:layout_constraintTop_toTopOf="@+id/imgSelerVerification"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="?selectableItemBackground"
+        app:srcCompat="@drawable/addimg_svg" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Variations"
+        android:textColor="#3A3A3A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/sellcardView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sellcardView3"
+        app:layout_constraintTop_toBottomOf="@+id/sellcardView3" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="38dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="14dp"
+        android:text="Color"
+        app:layout_constraintEnd_toEndOf="@+id/textView34"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="70dp"
+        style="@style/myToggleButton"
+        android:textAllCaps="false"
+        android:textOff="White"
+        android:textOn="White"
+        app:layout_constraintEnd_toEndOf="@+id/textView38"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        style="@style/myToggleButton"
+        android:textAllCaps="false"
+        android:textOff="Black"
+        android:textOn="Black"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButton"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        style="@style/myToggleButton"
+        android:textAllCaps="false"
+        android:textOff="Yellow"
+        android:textOn="Yellow"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButton2"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton2"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton2" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        style="@style/myToggleButton"
+        android:textAllCaps="false"
+        android:textOff="Green"
+        android:textOn="Green"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButton"
+        app:layout_constraintStart_toStartOf="@+id/toggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton5"
+        style="@style/myToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textOff="Red"
+        android:textOn="Red"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButton4"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton4"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton4" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        style="@style/myToggleButton"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textOff="Blue"
+        android:textOn="Blue"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButton5"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton5"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton5" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="206dp"
+        android:text="Size"
+        app:layout_constraintEnd_toEndOf="@+id/txtBoxAddColor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtBoxAddColor"
+        app:layout_constraintTop_toBottomOf="@+id/txtBoxAddColor" />
+
+    <ToggleButton
+        android:id="@+id/togggleXS"
+        style="@style/myToggleButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textOff="XS"
+        android:textOn="XS"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <ToggleButton
+        android:id="@+id/togggleXXS"
+        style="@style/myToggleButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textOff="XXS"
+        android:textOn="XXS"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButton9"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="@+id/toggleButton9"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton9" />
+
+    <ToggleButton
+        android:id="@+id/togggleXXL"
+        style="@style/myToggleButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textOff="XXL"
+        android:textOn="XXL"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButton10"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="@+id/toggleButton10"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton10" />
+
+    <ToggleButton
+        android:id="@+id/togggleXXXL"
+        style="@style/myToggleButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textOff="XXL"
+        android:textOn="XXL"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButton11"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="@+id/toggleButton11"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton11" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton9"
+        style="@style/myToggleButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textOff="S"
+        android:textOn="S"
+        app:layout_constraintBottom_toBottomOf="@+id/togggleXS"
+        app:layout_constraintStart_toEndOf="@+id/togggleXS"
+        app:layout_constraintTop_toTopOf="@+id/togggleXS" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        style="@style/myToggleButton"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textOff="L"
+        android:textOn="L"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButton10"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton10"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton10" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        style="@style/myToggleButton"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textOff="XL"
+        android:textOn="XL"
+        app:layout_constraintBottom_toBottomOf="@+id/toggleButton11"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton11"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton11" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sellProdColorRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/toggleButton7"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="@+id/toggleButton4"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton5" />
+
+    <EditText
+        android:id="@+id/txtBoxAddColor"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Add Custom Color"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellProdColorRecycler" />
+
+    <Button
+        android:id="@+id/btnAddColor"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_txtbox_btn"
+        android:drawableEnd="@drawable/add"
+        android:paddingEnd="6dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="#404040"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBoxAddColor"
+        app:layout_constraintStart_toEndOf="@+id/txtBoxAddColor"
+        app:layout_constraintTop_toTopOf="@+id/txtBoxAddColor" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sellProdSizeRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/togggleXXS"
+        app:layout_constraintStart_toStartOf="@+id/togggleXXS"
+        app:layout_constraintTop_toBottomOf="@+id/togggleXXS" />
+
+    <EditText
+        android:id="@+id/txtBoxAddSize"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Add Custom Size"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellProdSizeRecycler" />
+
+    <Button
+        android:id="@+id/btnAddSize"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_txtbox_btn"
+        android:drawableEnd="@drawable/add"
+        android:paddingEnd="6dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="#404040"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBoxAddSize"
+        app:layout_constraintStart_toEndOf="@+id/txtBoxAddSize"
+        app:layout_constraintTop_toTopOf="@+id/txtBoxAddSize" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

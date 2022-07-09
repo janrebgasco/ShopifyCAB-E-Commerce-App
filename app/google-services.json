@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "95923529253",
+    "firebase_url": "https://shopify-cab.firebaseio.com",
+    "project_id": "shopify-cab",
+    "storage_bucket": "shopify-cab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95923529253:android:fb6f68b21b6faba43dc1cc",
+        "android_client_info": {
+          "package_name": "com.clickawaybuying.shopify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95923529253-a0uloid1kb226j8oltvnhkg4h5kgu4fk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clickawaybuying.shopify",
+            "certificate_hash": "c421b117412389f614ba5e855d1b368c4b4442e6"
+          }
+        },
+        {
+          "client_id": "95923529253-o95qfhnts1gsraeau67oghhgg5abvgli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clickawaybuying.shopify",
+            "certificate_hash": "c421b117412389f614ba5e855d1b248c4b4442e7"
+          }
+        },
+        {
+          "client_id": "95923529253-t3d3472aklf98rul060q3jbdsgmipaf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clickawaybuying.shopify",
+            "certificate_hash": "3417d726755c582b6410e30e243d712aad628613"
+          }
+        },
+        {
+          "client_id": "95923529253-2eb2h178snroqjabuhu72flo8pn4giou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArfAEhw9Wnxdo7CHmfrEGUGLWYbUUKtnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95923529253-2eb2h178snroqjabuhu72flo8pn4giou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

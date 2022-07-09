@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9f6ea3"/>
+      <stop offset="1" stop-color="#ff74a4"/>
+    </linearGradient>
+    <filter id="Ellipse_6" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#834162" flood-opacity="0.341"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9f6f6"/>
+      <stop offset="1" stop-color="#c2a8bf"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_170" data-name="Group 170" transform="translate(-138.5 -289.5)">
+    <g id="Group_148" data-name="Group 148" transform="translate(-9)">
+      <g id="Home" transform="translate(145 -75)">
+        <g id="icon" transform="translate(-173 239)">
+          <g transform="matrix(1, 0, 0, 1, 175.5, 125.5)" filter="url(#Ellipse_6)">
+            <circle id="Ellipse_6-2" data-name="Ellipse 6" cx="32.5" cy="32.5" r="32.5" transform="translate(22.5 14.5)" fill="url(#linear-gradient)"/>
+          </g>
+        </g>
+      </g>
+      <g id="wheel-svgrepo-com" transform="translate(164 297)">
+        <g id="Group_143" data-name="Group 143" transform="translate(19.783 20)">
+          <g id="Group_142" data-name="Group 142" transform="translate(0)">
+            <path id="Path_166" data-name="Path 166" d="M19.234,0C8.628,0,0,9.138,0,20.37S8.628,40.74,19.234,40.74,38.467,31.6,38.467,20.37,29.839,0,19.234,0Zm0,38.1C10,38.1,2.493,30.146,2.493,20.37S10,2.64,19.234,2.64s16.741,7.954,16.741,17.73S28.465,38.1,19.234,38.1Z" fill="url(#linear-gradient-2)"/>
+          </g>
+        </g>
+        <g id="Group_145" data-name="Group 145" transform="translate(22.766 23.046)">
+          <g id="Group_144" data-name="Group 144" transform="translate(0 0)">
+            <path id="Path_167" data-name="Path 167" d="M99.233,82.941c-8.982,0-16.292,7.756-16.292,17.289,0,9.516,7.292,17.289,16.292,17.289s16.292-7.779,16.292-17.289S108.233,82.941,99.233,82.941Zm4.268,4.068a13.017,13.017,0,0,1,4.38,2.691l-3.11,1.906a.818.818,0,0,1-.847,0,.912.912,0,0,1-.423-.778V87.009Zm-8.537,0v3.819a.912.912,0,0,1-.423.778.817.817,0,0,1-.847,0L90.584,89.7A13.013,13.013,0,0,1,94.964,87.009Zm-8.9,13.22a14.807,14.807,0,0,1,.245-2.688l3.117,1.91a.927.927,0,0,1,0,1.556l-3.117,1.909A14.824,14.824,0,0,1,86.064,100.23Zm8.9,13.221a13.017,13.017,0,0,1-4.38-2.691l3.11-1.906a.817.817,0,0,1,.846,0,.912.912,0,0,1,.423.778v3.819Zm8.537,0v-3.819a.912.912,0,0,1,.423-.778.817.817,0,0,1,.846,0l3.11,1.906A13.014,13.014,0,0,1,103.5,113.45Zm7.656-7.3a14.11,14.11,0,0,1-1.14,2.085h0l-3.684-2.257a3.773,3.773,0,0,0-3.97,0,4.278,4.278,0,0,0-1.985,3.648v4.52c-.347.032-.733.052-1.117.053H99.2c-.364,0-.751-.019-1.117-.053v-4.52a4.278,4.278,0,0,0-1.985-3.648,3.773,3.773,0,0,0-3.97,0l-3.684,2.257h0a14.057,14.057,0,0,1-1.148-2.1l3.687-2.259a4.345,4.345,0,0,0,0-7.3L87.3,94.323a14.091,14.091,0,0,1,1.148-2.1h0l3.684,2.257a3.774,3.774,0,0,0,3.97,0,4.278,4.278,0,0,0,1.985-3.648v-4.52c.343-.032.741-.052,1.117-.053h.056c.38,0,.778.021,1.117.053v4.52a4.278,4.278,0,0,0,1.985,3.648,3.774,3.774,0,0,0,3.97,0l3.684-2.257a14.076,14.076,0,0,1,1.148,2.1l-3.689,2.26a4.346,4.346,0,0,0,0,7.3l3.687,2.259Zm-2.118-5.146a.927.927,0,0,1,0-1.555l3.118-1.911a14.837,14.837,0,0,1,0,5.375Z" transform="translate(-82.941 -82.941)" fill="url(#linear-gradient-2)"/>
+          </g>
+        </g>
+        <g id="Group_147" data-name="Group 147" transform="translate(36.846 37.837)">
+          <g id="Group_146" data-name="Group 146">
+            <path id="Path_168" data-name="Path 168" d="M204.123,201.866a2.6,2.6,0,1,0,2.257,2.573A2.434,2.434,0,0,0,204.123,201.866Zm0,3.57a1,1,0,1,1,.874-1A.942.942,0,0,1,204.123,205.436Z" transform="translate(-201.866 -201.866)" fill="url(#linear-gradient-2)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

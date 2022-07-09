@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff7676"/>
+      <stop offset="1" stop-color="#ffae4e"/>
+    </linearGradient>
+    <filter id="Ellipse_25" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#ff6262" flood-opacity="0.341"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fffcfc"/>
+      <stop offset="1" stop-color="#ffa79e"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_173" data-name="Group 173" transform="translate(-146.5 -411.5)">
+    <g id="Group_161" data-name="Group 161">
+      <g transform="matrix(1, 0, 0, 1, 146.5, 411.5)" filter="url(#Ellipse_25)">
+        <circle id="Ellipse_25-2" data-name="Ellipse 25" cx="32.5" cy="32.5" r="32.5" transform="translate(22.5 14.5)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="cabinet-svgrepo-com" transform="translate(172 387.69)">
+        <g id="Group_151" data-name="Group 151" transform="translate(16 53.31)">
+          <g id="Group_150" data-name="Group 150">
+            <path id="Path_172" data-name="Path 172" d="M27.481,35.31H0v1.455H1.527V66.6c0,.4.228.728.509.728h.509v3.638c0,.4.228.728.509.728H7.125c.281,0,.509-.325.509-.728V67.326H21.883v3.638c0,.4.228.728.509.728h4.071c.281,0,.509-.325.509-.728V67.326h.509c.281,0,.509-.325.509-.728V36.765h1.526V35.31ZM6.616,70.237H3.562V67.326H6.616ZM10.687,45.5V65.871H2.544V36.765h8.142Zm15.267,24.74H22.9V67.326h3.053Zm1.018-4.366H11.7v-8H26.972Zm0-9.459H11.7V46.225H26.972Zm0-11.642H11.7v-8H26.972Z" transform="translate(0 -35.31)" fill="url(#linear-gradient-2)"/>
+          </g>
+        </g>
+        <g id="Group_153" data-name="Group 153" transform="translate(21.532 69.12)">
+          <g id="Group_152" data-name="Group 152">
+            <path id="Path_173" data-name="Path 173" d="M125.9,203.035h-1.736a.532.532,0,0,0-.579.469v1.407a.592.592,0,0,0,1.157,0v-.938H125.9a.479.479,0,1,0,0-.938Z" transform="translate(-123.586 -203.035)" fill="url(#linear-gradient-2)"/>
+          </g>
+        </g>
+        <g id="Group_155" data-name="Group 155" transform="translate(33.195 79.415)">
+          <g id="Group_154" data-name="Group 154">
+            <rect id="Rectangle_449" data-name="Rectangle 449" width="4.666" height="0.966" fill="url(#linear-gradient-2)"/>
+          </g>
+        </g>
+        <g id="Group_156" data-name="Group 156" transform="translate(33.194 69.115)">
+          <g id="Group_154-2" data-name="Group 154">
+            <rect id="Rectangle_449-2" data-name="Rectangle 449" width="4.666" height="0.966" fill="url(#linear-gradient-2)"/>
+          </g>
+        </g>
+        <g id="Group_157" data-name="Group 157" transform="translate(33.194 58.655)">
+          <g id="Group_154-3" data-name="Group 154">
+            <rect id="Rectangle_449-3" data-name="Rectangle 449" width="4.666" height="0.966" fill="url(#linear-gradient-2)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

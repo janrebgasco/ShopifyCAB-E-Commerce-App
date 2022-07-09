@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#76baff"/>
+      <stop offset="1" stop-color="#4efff8"/>
+    </linearGradient>
+    <filter id="Ellipse_5" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#62aaff" flood-opacity="0.341"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fffcfc"/>
+      <stop offset="1" stop-color="#96cff7"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_174" data-name="Group 174" transform="translate(-14.5 -411.5)">
+    <g id="Beauty" transform="translate(12 167)">
+      <g id="icon" transform="translate(-87 119)">
+        <g transform="matrix(1, 0, 0, 1, 89.5, 125.5)" filter="url(#Ellipse_5)">
+          <circle id="Ellipse_5-2" data-name="Ellipse 5" cx="32.5" cy="32.5" r="32.5" transform="translate(22.5 14.5)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+    <g id="man-t-shirt-svgrepo-com" transform="translate(49 408.495)">
+      <path id="Path_171" data-name="Path 171" d="M42.621,49.189s-2.349-9.707-2.356-9.729a10.059,10.059,0,0,0-4.754-5.9,49.6,49.6,0,0,0-6.975-3.139l-.027.219s-.358,6.234-6.83,6.234h-.708c-6.393,0-7.194-6.087-7.233-6.231l-.06-.087c-4.761,2.026-6.522,3.02-6.537,3.028a10.559,10.559,0,0,0-4.756,5.887C2.38,39.494.029,49.191.029,49.191A.991.991,0,0,0,.361,50.2a31.363,31.363,0,0,0,5.913,3.307.876.876,0,0,0,1.15-1.035,27.4,27.4,0,0,1-.359-6.146.879.879,0,0,1,1.74-.149,31.191,31.191,0,0,1,.857,7.067l0,17.856A1.815,1.815,0,0,0,11.375,73H26.524V71.1h3.429V73h1.569a1.815,1.815,0,0,0,1.715-1.9l0-17.856a33.563,33.563,0,0,1,.676-6.5.859.859,0,0,1,1.707.179,35.979,35.979,0,0,1-.3,5.437.882.882,0,0,0,1.149,1.016,28.372,28.372,0,0,0,5.815-3.168A1,1,0,0,0,42.621,49.189Zm-12.383,0a.619.619,0,0,1-.362.577L27.2,50.881a.506.506,0,0,1-.391,0l-2.658-1.113a.6.6,0,0,1-.342-.577V43.515c0-.34.211-.462.518-.462h5.354c.307,0,.558.122.558.462v5.677Z" transform="translate(0 0)" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <ToggleButton
+        android:id="@+id/sizeToggle"
+        style="@style/myToggleButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:textOff="null"
+        android:textOn="null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/sizeDecrease"
+        android:layout_width="12dp"
+        android:layout_height="20dp"
+        android:background="?selectableItemBackground"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sizeToggle" />
+
+    <Button
+        android:id="@+id/sizeIncrease"
+        android:layout_width="12dp"
+        android:layout_height="20dp"
+        android:background="?selectableItemBackground"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sizeToggle" />
+    <TextView
+        android:id="@+id/sizeQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:textAlignment="center"
+        android:hint="0"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/sizeIncrease"
+        app:layout_constraintStart_toEndOf="@+id/sizeDecrease"
+        app:layout_constraintTop_toBottomOf="@+id/sizeToggle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

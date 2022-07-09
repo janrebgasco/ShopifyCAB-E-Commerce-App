@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e6b15c"/>
+      <stop offset="1" stop-color="#fff84e"/>
+    </linearGradient>
+    <filter id="Ellipse_6" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#d59f26" flood-opacity="0.341"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fdf9f9"/>
+      <stop offset="1" stop-color="#f9dda3"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_171" data-name="Group 171" transform="translate(-285.5 -289.5)">
+    <g id="Furniture" transform="translate(283 -75)">
+      <g id="icon" transform="translate(-173 239)">
+        <g transform="matrix(1, 0, 0, 1, 175.5, 125.5)" filter="url(#Ellipse_6)">
+          <circle id="Ellipse_6-2" data-name="Ellipse 6" cx="32.5" cy="32.5" r="32.5" transform="translate(22.5 14.5)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+    <g id="long-sleeve-flowy-dress-svgrepo-com" transform="translate(254.49 310)">
+      <g id="Group_149" data-name="Group 149" transform="translate(69.223 6)">
+        <path id="Path_169" data-name="Path 169" d="M93.774,107.646a3.8,3.8,0,0,0,2.253-.881,52.769,52.769,0,0,1-9.232-24.14l-.031,0c-.33-2.014-.868-4.914-1.118-5.6-.181.006-.444.017-.763.031-.752.032-1.807.076-2.84.1-.711.019-1.3.054-1.828.086a19.9,19.9,0,0,1-2.11.055c-.221-.01-.663-.044-1.233-.089-1.461-.116-5.837-.464-6.54-.151a44.286,44.286,0,0,1-.727,4.734l-.057-.007a52.886,52.886,0,0,1-9.325,24.981,3.8,3.8,0,0,0,2.253.881,1.071,1.071,0,0,1,1.172,1.443c-.27.423,1.442.458,2.163.775a4.383,4.383,0,0,0,3.214-.211c.57-.493.8-.775,1.337-.81l-.27,1.515a16.884,16.884,0,0,0,4.236.528c1.352-.176,2.659.176,3.019-.317l.09-.775.691-.07.691.07.09.775c.361.493,1.667.14,3.018.317a16.858,16.858,0,0,0,4.236-.528l-.27-1.515c.541.035.765.318,1.337.81a4.383,4.383,0,0,0,3.214.211c.721-.318,2.434-.353,2.163-.775A1.068,1.068,0,0,1,93.774,107.646Z" transform="translate(-60.223 -69.915)" fill="url(#linear-gradient-2)"/>
+        <path id="Path_170" data-name="Path 170" d="M94.314,22.148S89,4.364,88.229,2.163,83.384,0,83.384,0c0,5.647-6.971,4.914-6.971,4.914S69.44,5.647,69.44,0c0,0-4.077-.037-4.845,2.164S58.51,22.148,58.51,22.148s.709.807,4.372.88l4.491-10.992-.069-.007a24.775,24.775,0,0,0,.705-3.655.313.313,0,0,1,.186-.285c.6-.356,3.042-.278,7.058-.025.544.035.967.061,1.176.068.638.02,1.23-.008,1.981-.043.526-.025,1.116-.053,1.827-.068,1.012-.021,2.044-.056,2.779-.08.519-.017.891-.03,1.016-.03.375,0,.609.014,1.521,4.379l4.387,10.737C93.605,22.955,94.314,22.148,94.314,22.148ZM76.412,7.8c-.261,0-.473-.131-.473-.294s.212-.294.473-.294.473.132.473.294S76.673,7.8,76.412,7.8Zm0-.978c-.261,0-.473-.131-.473-.294s.212-.294.473-.294.473.132.473.294S76.673,6.82,76.412,6.82Zm0-.978c-.261,0-.473-.131-.473-.294s.212-.294.473-.294.473.132.473.294S76.673,5.842,76.412,5.842Z" transform="translate(-58.51 0)" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+  </g>
+</svg>

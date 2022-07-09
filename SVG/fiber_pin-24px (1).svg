@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.659" height="44.876" viewBox="0 0 40.659 44.876">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0082ff"/>
+      <stop offset="1" stop-color="#a3d3ff"/>
+    </linearGradient>
+  </defs>
+  <g id="fiber_pin-24px" transform="matrix(1, -0.017, 0.017, 1, 0, 0.696)">
+    <path id="Path_183" data-name="Path 183" d="M0,0H39.894V44.187H0Z" fill="none"/>
+    <path id="Path_184" data-name="Path 184" d="M8.281,18.7h3.589v2.262H8.281ZM34.3,4H5.589C3.6,4,2.018,6.013,2.018,8.523L2,35.664c0,2.51,1.6,4.523,3.589,4.523H34.3c1.992,0,3.589-2.013,3.589-4.523V8.523C37.894,6.013,36.3,4,34.3,4ZM14.563,20.963c0,1.922-1.167,3.393-2.692,3.393H8.281v4.523H5.589V15.308h6.281c1.525,0,2.692,1.47,2.692,3.393Zm6.281,7.916H18.152V15.308h2.692Zm13.46,0H32.151l-4.576-7.916v7.916H25.331V15.308h2.243l4.487,7.916V15.308H34.3Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <ToggleButton
+        android:id="@+id/listToggle"
+        style="@style/myToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="false"
+        android:textOff="null"
+        android:textOn="null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/colorQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:textAlignment="center"
+        android:hint="0"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/colorIncrease"
+        app:layout_constraintStart_toEndOf="@+id/colorDecrease"
+        app:layout_constraintTop_toBottomOf="@+id/listToggle" />
+
+    <Button
+        android:id="@+id/colorDecrease"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?selectableItemBackground"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listToggle" />
+
+    <Button
+        android:id="@+id/colorIncrease"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?selectableItemBackground"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listToggle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

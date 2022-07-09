@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#77a5f8"/>
+      <stop offset="1" stop-color="#d5a3ff"/>
+    </linearGradient>
+    <filter id="Path_160" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#7a71e8" flood-opacity="0.341"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fcf6f6"/>
+      <stop offset="1" stop-color="#b7c9f1"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_164" data-name="Group 164" transform="translate(-152.5 -12.5)">
+    <g id="Group_141" data-name="Group 141" transform="translate(42 1)">
+      <g transform="matrix(1, 0, 0, 1, 110.5, 11.5)" filter="url(#Path_160)">
+        <path id="Path_160-2" data-name="Path 160" d="M32.5,0A32.5,32.5,0,1,1,0,32.5,32.5,32.5,0,0,1,32.5,0Z" transform="translate(22.5 14.5)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="XMLID_5_" d="M87.458,0H69.093C67.381,0,66,.951,66,2.129V32.17c0,1.179,1.381,2.129,3.093,2.129H87.4c1.712,0,3.093-.951,3.093-2.129V2.129C90.493.951,89.112,0,87.458,0ZM78.276,33.081c-.992,0-1.829-.576-1.829-1.259s.837-1.259,1.829-1.259,1.829.576,1.829,1.259S79.268,33.081,78.276,33.081Zm10.116-3.844H68.159V5.022H88.45V29.237Z" transform="translate(87 41)" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/homeScreen">
+
+    <activity
+        android:id="@+id/chat"
+        android:name="com.clickawaybuying.shopify.Chat"
+        android:label="activity_chat"
+        tools:layout="@layout/activity_chat" />
+    <activity
+        android:id="@+id/search_result"
+        android:name="com.clickawaybuying.shopify.search_result"
+        android:label="activity_search_result"
+        tools:layout="@layout/activity_search_result" />
+    <activity
+        android:id="@+id/wallet"
+        android:name="com.clickawaybuying.shopify.sellerProducts"
+        android:label="activity_wallet"
+        tools:layout="@layout/activity_seller_products" />
+    <activity
+        android:id="@+id/homeScreen"
+        android:name="com.clickawaybuying.shopify.HomeScreen"
+        android:label="activity_home_screen"
+        tools:layout="@layout/activity_home_screen" />
+    <activity
+        android:id="@+id/cart"
+        android:name="com.clickawaybuying.shopify.Cart"
+        android:label="activity_cart"
+        tools:layout="@layout/activity_cart" />
+    <activity
+        android:id="@+id/profile"
+        android:name="com.clickawaybuying.shopify.Profile"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
+</navigation>
